@@ -1,0 +1,75 @@
+<div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="10px">
+    <div>
+        <mat-accordion class="panel">
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Property details
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <app-property-form></app-property-form>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Property details
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <app-property-form></app-property-form>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Property details
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <app-property-form></app-property-form>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Property details
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <app-property-form></app-property-form>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <div>
+        <h2><strong>Declaration</strong></h2>
+        <hr class="solid">
+    </div>
+    <div>
+        <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>By Selecting to Continue Below:</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus modi animi similique eos reprehenderit numquam culpa inventore quidem, tenetur officiis nihil, iste nesciunt cupiditate dicta dolor ut quam repellat.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis culpa nisi dicta illo libero reprehenderit ipsam voluptate, fuga dolorem deserunt ipsa quidem a velit fugiat tempore unde veritatis dolorum explicabo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores facilis ipsa assumenda facere, in sed, repudiandae qui blanditiis ipsum, quasi amet cumque? Consequatur, tempora. Adipisci nihil repellendus eos doloribus molestias?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem mollitia nemo, saepe deserunt dolorum ea debitis officiis atque vero repudiandae doloribus blanditiis nobis id. Sunt aperiam eveniet tempore pariatur odit?
+              </p>
+            </mat-card-content>
+            </mat-card>
+    </div>
+    <div>
+        <h3><strong>General Mortgage Declaration></strong></h3>
+        <h3><strong>Data Protection Statement></strong></h3>
+    </div>
+    <div>
+        If there is anything within this application you are unsure about, please contact us before proceeding
+    </div>
+    <div>
+        <mat-checkbox>
+          I agree to Declaration, General Mortgage Declaration and Data Protection Statement
+        </mat-checkbox>
+    </div>
+    <div>
+      <button mat-raised-button>go_back</button>
+      <span class="spacer"></span>
+      <button mat-raised-button>save_continue</button>
+    </div>
+</div>
+
+  

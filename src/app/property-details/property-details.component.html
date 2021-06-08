@@ -1,0 +1,31 @@
+<!--<div 
+  gdAreas="header | content | footer"
+  gdGap="16px"
+  gdRows="auto auto auto">
+  <div gdArea="header">
+    <app-header></app-header>
+   </div>
+  <div gdArea="content">
+    <app-sidenav></app-sidenav>
+    <app-property-form></app-property-form>
+  </div>
+  <div gdArea="footer">
+    <app-footer></app-footer>
+  </div>
+</div>-->
+
+<div fxLayout="column">
+  <div><app-header></app-header></div>
+  <div class="content">
+    <mat-drawer-container class="container">
+      <mat-drawer mode="side" opened class="sidebar"><app-sidenav></app-sidenav></mat-drawer>
+      <mat-drawer-content class="form"><app-property-form></app-property-form></mat-drawer-content>
+    </mat-drawer-container>
+  </div>
+  <div><app-footer></app-footer></div>
+</div>
+
+<!--
+<div style="border: 1px solid;"><app-sidenav></app-sidenav></div>
+<div style="border: 1px solid;"><app-property-form></app-property-form></div>
+-->

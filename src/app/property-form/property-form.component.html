@@ -1,0 +1,62 @@
+<div fxLayout="column">
+    <div><h1><strong>Property details</strong></h1></div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facere sequi, similique mollitia corporis voluptatem doloribus iusto adipisci ab reprehenderit omnis repellendus ducimus beatae eius nobis qui itaque veniam. Quo?</p>
+    </div>
+    <div>
+        <h4><strong>Your property address</strong></h4>
+        <hr class="solid">
+        <p>Please tell us the address of the property you want to mortgage</p>
+    </div>
+    <form action="" class="form" fxLayout="column" fxLayoutAlign="start" fxLayoutGap="10px">
+        <mat-form-field>
+            <input matInput placeholder="Postcode">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Address">
+        </mat-form-field>
+        <h4><strong>Your property details</strong></h4>
+        <hr class="solid">
+        <mat-form-field>
+            <mat-label>Property Type</mat-label>
+            <mat-select>
+                <mat-option *ngFor="let food of foods" [value]="food.type">
+                    {{food.value}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Number of Bedrooms">
+        </mat-form-field>
+            <h4>Approximately when was the property built?</h4>
+            <mat-button-toggle-group aria-label="Font Style">
+                <mat-button-toggle value="bold">Before 1914</mat-button-toggle>
+                <mat-button-toggle value="italic">1914 to 1944</mat-button-toggle>
+                <mat-button-toggle value="underline">1945 to 1980</mat-button-toggle>
+                <mat-button-toggle value="underline">After 1980</mat-button-toggle>
+            </mat-button-toggle-group>
+            <mat-form-field>
+                <mat-label>How old is the property</mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let food of foods" [value]="food.type">
+                        {{food.value}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <h4>Is the property covered by a structure warranty(e.g. NHBC cover)?</h4>
+            <div class="button-row">
+                <button mat-raised-button>Yes</button>
+                <button mat-raised-button>No</button>
+            </div>
+            <h4>Tenure type</h4>
+            <mat-button-toggle-group aria-label="Font Style">
+                <mat-button-toggle value="bold">Freehold</mat-button-toggle>
+                <mat-button-toggle value="italic">Leasehold</mat-button-toggle>
+                <mat-button-toggle value="underline">Commonhold</mat-button-toggle>
+                <mat-button-toggle value="underline">Absolute title/feudal</mat-button-toggle>
+            </mat-button-toggle-group>
+            <div style="width: 100px;">
+                <button mat-raised-button class="submit">save_continue</button>
+            </div>
+    </form>
+</div>

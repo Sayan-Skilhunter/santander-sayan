@@ -1,0 +1,26 @@
+mat-form-field {
+    width: 300px;
+}
+
+.submit {
+    border-radius: 15px;
+    background-color: orangered;
+}
+
+.solid {
+    border-top: 3px solid black;
+  }
+
+mat-button-toggle-group {
+    width: 420px;;
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.button-row {
+    display: table-cell;
+    justify-content: space-between;
+    width: 490px;
+}
